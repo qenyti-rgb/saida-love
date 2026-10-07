@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Для Саиды ❤️</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; min-height:100vh; color:#3c2930;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255,255,255,.75), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(255,220,230,.45), transparent 28%),
+    linear-gradient(135deg,#f7e8eb,#eee0e6 48%,#f8edf0);
+}
+.hero{
+  min-height:78vh; display:flex; align-items:center; justify-content:center;
+  padding:70px 18px 40px; text-align:center; position:relative; overflow:hidden;
+}
+.hero:before,.hero:after{
+  content:"❤"; position:absolute; opacity:.08; font-size:180px;
+}
+.hero:before{left:-35px;top:30px} .hero:after{right:-35px;bottom:20px}
+.hero-inner{max-width:760px;position:relative;z-index:1}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:12px;opacity:.65}
+h1{font-size:clamp(42px,11vw,86px);font-weight:400;margin:16px 0 8px}
+.subtitle{font-size:clamp(18px,4vw,25px);opacity:.8}
+.scroll{display:inline-block;margin-top:34px;text-decoration:none;color:#7d4a5b;border:1px solid #b98c9d;border-radius:999px;padding:11px 20px}
+.music{
+ position:fixed;right:16px;top:16px;z-index:20;
+ background:rgba(255,248,250,.92);backdrop-filter:blur(10px);
+ border:1px solid rgba(130,70,90,.18);border-radius:999px;
+ box-shadow:0 8px 25px rgba(70,35,45,.12);
+ padding:9px 14px;display:flex;gap:9px;align-items:center
+}
+.music button{border:0;background:none;color:#7d4a5b;font-size:20px;cursor:pointer}
+.music span{font-family:Arial,sans-serif;font-size:12px}
+.book{max-width:850px;margin:0 auto;padding:15px 16px 90px}
+.page{
+  background:rgba(255,252,250,.94); border:1px solid rgba(120,70,80,.13);
+  border-radius:18px; margin:0 auto 24px; padding:clamp(28px,7vw,58px);
+  box-shadow:0 18px 50px rgba(70,35,45,.10);
+  min-height:420px; position:relative;
+}
+.page-number{position:absolute;right:24px;top:18px;font:12px Arial,sans-serif;opacity:.35}
+.paper-text{font-size:clamp(17px,3.8vw,21px);line-height:1.85;white-space:normal}
+.page:first-child .paper-text{font-size:clamp(19px,4.3vw,23px)}
+.footer{text-align:center;padding:30px 20px 70px;font-size:14px;opacity:.6}
+@media(max-width:600px){
+ .music span{display:none}
+ .music{padding:8px 11px}
+ .page{border-radius:14px}
+}
+</style>
+</head>
+<body>
+<div class="music">
+  <button id="play" aria-label="Музыка">▶</button><span>Наша песня</span>
+</div>
+<audio id="audio" src="song.mp3" loop preload="metadata"></audio>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">для Саиды</div>
+    <h1>Наша история</h1>
+    <div class="subtitle">Любовь, которая дождалась встречи.</div>
+    <a class="scroll" href="#page-1">Открыть историю ↓</a>
+  </div>
+</header>
+
+<main class="book">
+
+      <article class="page" id="page-1">
+        <div class="page-number">1</div>
+        <div class="paper-text">ОГЛАВЛЕНИЕ<br>1- ГЛАВА ночь где все началось 2<br>год ожидания 4<br>встреча 6<br>вторая встреча 8<br>письмо для Саиды 9</div>
+      </article>
+    
+      <article class="page" id="page-2">
+        <div class="page-number">2</div>
+        <div class="paper-text">1- ГЛАВА ночь где все началось<br>​10 августа 2025 года началось как самый обычный день. Я состоял в одной<br>общей группе и даже представить не мог, что среди десятков участников<br>скрывается человек, который перевернет весь мой мир.<br>​Я просто написал тебе в личку, потом попросил твой ТикТок. Всё начиналось<br>так постепенно, шаг за шагом, пока наши диалоги не стали самым главным<br>ритуалом дня. Ты стала тем человеком, с которым можно было говорить до<br>самого рассвета. После работы я забывал об усталости: мы переписывались<br>целыми ночами, смеялись, сидели в группах, а потом скачали Rave и стали<br>вместе смотреть фильмы. Ты никогда не уходила спать раньше — всегда<br>оставалась сомной до самых финальных титров.</div>
+      </article>
+    
+      <article class="page" id="page-3">
+        <div class="page-number">3</div>
+        <div class="paper-text">​Я нарочно игнорировал сообщения других людей, лишь бы не гас наш «огонёк»,<br>лишь бы сохранить эту магию между нами.<br>​А потом всё рухнуло. Заодин-единственный день мы перестали общаться.<br>Мы просто разошлись по разным дорогам, хотя знали аккаунты друг<br>друга наизусть. Ни у кого из нас не хватило смелости признаться первой: ты<br>думала, что я люблю другую, ая был уверен, что ты меня ненавидишь.<br>​Так прошел целый год. Год молчания, за которым скрывались глубокие,<br>неисчезнувшие чувства.</div>
+      </article>
+    
+      <article class="page" id="page-4">
+        <div class="page-number">4</div>
+        <div class="paper-text">год ожидания<br>Спустя целый год я не выдержал и решил написать тебе в Инстаграме. Мы<br>снова шаг за шагом начали восстанавливать наш мост: я попросил твой<br>Телеграм, твой ТикТок, и вскоре мы снова начали общаться днями и ночами,<br>как раньше. Всё вернулось на свои места.<br>Но меня терзал один вопрос. Я видел твои репосты в ТикТоке и спросил, про<br>кого они. Ты ответила, что не скажешь. А спустя месяц мне попался<br>очередной твой репост — о том, как сильно ты кого-то любишь и скучаешь.<br>На душе стало так тяжело и больно... Я искренне не хотел мешать твоему<br>счастью, поэтому просто написал:</div>
+      </article>
+    
+      <article class="page" id="page-5">
+        <div class="page-number">5</div>
+        <div class="paper-text">«Удачи с ним, надеюсь, у вас всё получится» — и отписался.<br>А на утро ты написала слова, от которых мое сердце замерло:<br>— Все эти репосты были про тебя. Я ждала тебя целый год.<br>В тот день я был на седьмом небе от счастья. Ты призналась в любви, а я<br>ответил взаимно.</div>
+      </article>
+    
+      <article class="page" id="page-6">
+        <div class="page-number">6</div>
+        <div class="paper-text">встреча<br>Уже через два дня я ехал в Каракол —туда, где ждала меня ты.<br>Когда я приехал, ты перепутала вокзал состановкой какая же ты растяпа.<br>Но вот и наконец то.<br>Я увидел тебя. И в ту же секунду растерялся и влюбился заново, да так<br>сильно, как никогда раньше.<br>В реальной жизни ты оказалась в десять раз красивее, чем на любых<br>фотографиях. Чуть ниже меня ростом, с невероятными карамельными<br>волосами,каримиглазами,вкоторыхотражалсясвет,имилымносиком,совсем<br>как у котёнка. А когда ты улыбалась, показывая свои милые клыки, я просто<br>таял.</div>
+      </article>
+    
+      <article class="page" id="page-7">
+        <div class="page-number">7</div>
+        <div class="paper-text">Мы пошли гулять по Караколу. Я не мог оторвать от тебя глаз. Ты стеснялась<br>моей пристальности и улыбалась еще нежнее. Мы посидели в кафе, а потом<br>пошли в кино. Я держал тебя за руку и крепко сжимал твои пальцы — я просто<br>не хотел тебя отпускать.<br>Когда через день мы встретились снова, полчаса перед прощанием стали<br>самыми тяжелыми. Ты заплакала, моя принцесса, и у меня всё ёкнуло внутри:<br>«Жаным, жаным, не плачь, пожалуйста. Я так люблю тебя».</div>
+      </article>
+    
+      <article class="page" id="page-8">
+        <div class="page-number">8</div>
+        <div class="paper-text">вторая встреча<br>Эти два дня пролетели как два часа. Вернувшись домой, я продержался всего<br>неделю —я так сильно соскучился, что снова помчался в Каракол.<br>Увидев тебя снова, я окончательно понял: ты — та самая. Единственная. Мы<br>гуляли по парку, и ты повела меня в зоопарк — я был там первый раз в своей<br>жизни, и невероятно счастлив, что рядом была именно ты. В тот день ты<br>казалась мне уже не просто девушкой, амоей родной женой.<br>Потом мы уехали в Кызыл-Суу, где снова смотрели фильм. И я опять тонул в<br>твоих карих глазах, восхищаясь твоим безобидным, невероятно «мили-мили»<br>взглядом.</div>
+      </article>
+    
+      <article class="page" id="page-9">
+        <div class="page-number">9</div>
+        <div class="paper-text">письмо для Саиды<br>Саида, любимая моя, жаным, я хочу, чтобы ты прочитала эти строки и навсегда<br>запомнила их.<br>С тобой я чувствую себя самым любимым человеком на свете. Спасибо тебе за<br>всё. И да — я ревную тебя абсолютно ко всем! Но как тебя не ревновать, если<br>ты насколько красивая и милая? Без тебя уже не проходит ни один мой день:<br>первое, что я делаю утром —это пишу тебе.</div>
+      </article>
+    
+      <article class="page" id="page-10">
+        <div class="page-number">10</div>
+        <div class="paper-text">Ты часто говоришь мне, что комплексуешь из-за своей внешности. Но если бы<br>ты только видела себя моими глазами!<br>Твои карие глаза сияют так, что я готов тонуть в них вечно.<br>Твой носик —самый милый на свете, прямо как укотенка.<br>Твоя улыбка склыками —это что-то невероятное.<br>А твои губы —сладкие, словно мёд.<br>Ты говоришь, что у тебя все подруги красотки? Да пусть они будут кем угодно!<br>Нахуй они мне сдались, если ты —мой единственный эталон красоты.<br>Я завидую сам себе, потому что рядом со мной идет девушка моей мечты, мой<br>идеал.<br>Я люблю тебя. Люблю, люблю, люблю, жаным моя. Ты — моя любимая<br>принцесса и моя будущая жена. Спасибо тебе за то, что ты есть. Ты у меня<br>самая лучшая.</div>
+      </article>
+    
+</main>
+
+<footer class="footer">❤️</footer>
+
+<script>
+const audio=document.getElementById('audio');
+const btn=document.getElementById('play');
+btn.addEventListener('click', async ()=>{
+  if(audio.paused){try{await audio.play()}catch(e){};btn.textContent='❚❚';}
+  else{audio.pause();btn.textContent='▶';}
+});
+</script>
+</body>
+</html>
